@@ -23,22 +23,6 @@ ansible-playbook -i ${TARGET_HOST}, ./configs/ocp-workloads/ocp-workload.yml \
     -e"ACTION=create"
 ----
 
-export OCP_USERNAME="kubeadmin" \
-export WORKLOAD="ocp4-workload-pam-with-frontend-demo" \
-export GUID="c395"
-export TARGET_HOST="bastion.${GUID}.sandbox1765.opentlc.com"
-
-ansible-playbook -i "${TARGET_HOST}", ./configs/ocp-workloads/ocp-workload.yml \
-    -e"ansible_user=cfoskin-redhat.com" \
-    -e"ansible_ssh_pass=r3dh4t1! " \
-    -e"ocp_username=${OCP_USERNAME}" \
-    -e"ocp_workload=${WORKLOAD}" \
-    -e"namespace_prefix=cfoskin" \
-    -e"user_count_start=1" \
-    -e"user_count_end=2" \
-    -e"ACTION=create"
-
-
 === To Delete an environment
 
 ----
