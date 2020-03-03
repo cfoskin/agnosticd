@@ -1,7 +1,6 @@
-= ocp4-workload-pam-fraudmanagement-workshop
+= ocp4-workload-pam-with-frontend-demo
 
-Proactive Fraud Management with Case Management, Kafka and DMN Services
-
+PAM with front end
 == Role overview
 
 === Deploy a Workload with the `ocp-workload` playbook [Mostly for testing]
